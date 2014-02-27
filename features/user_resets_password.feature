@@ -49,3 +49,4 @@ Feature: User resets password
     And I fill in "Confirm new password" with "secret!!"
     And I press "Change my password"
     Then I should see "Password confirmation doesn't match Password"
+

@@ -3,6 +3,9 @@ Hirameku::Application.routes.draw do
   root :to => 'static_pages#home'
   get 'static_pages/home' => 'static_pages#home'
   get 'static_pages/about' => 'static_pages#about'
+  match '/signup', to: 'users#new', via: 'get'
+
+  resources :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

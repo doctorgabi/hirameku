@@ -22,6 +22,7 @@ group :test do
   gem 'codeclimate-test-reporter', require: nil
   gem 'email_spec'
   gem 'poltergeist'
+  gem 'fabrication'
 end
 
 gem 'devise'

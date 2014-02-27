@@ -38,3 +38,8 @@ end
 Given(/^I am on the sign in page$/) do
   visit new_user_session_path
 end
+
+Given(/^I am on my profile page$/) do
+  visit user_path(User.find(id: id))
+end
+
