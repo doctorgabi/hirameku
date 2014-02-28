@@ -43,3 +43,7 @@ Given(/^I am on my profile page$/) do
   visit user_path(User.find(id: id))
 end
 
+Then(/^I select "(.*?)" from "(.*?)"$/) do |value, field|
+  select(value, :from => field)
+end
+

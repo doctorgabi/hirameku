@@ -3,6 +3,8 @@ Hirameku::Application.routes.draw do
   root :to => 'static_pages#home'
   get 'static_pages/home' => 'static_pages#home'
   get 'static_pages/about' => 'static_pages#about'
+  get 'static_pages/user' => 'static_pages#user'
+
   match '/signup', to: 'users#new', via: 'get'
 
   resources :users
